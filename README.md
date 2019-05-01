@@ -2,7 +2,7 @@
 
 
 
-I've used this package to create the CI project as it comes pre packaged with composer usability. <https://github.com/kenjis/codeigniter-composer-installer/tree/4.x>.
+I've used this package to create the CI project as it comes pre packaged with composer usability. <https://github.com/kenjis/codeigniter-composer-installer>.
 
 You can update CodeIgniter system folder to latest version with one command.
 
