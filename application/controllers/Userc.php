@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 use Illuminate\Database\Capsule\Manager as Capsule;
+use Jenssegers\Blade\Blade;
 
 class Userc extends CI_Controller {
 	function __construct()
@@ -8,11 +9,16 @@ class Userc extends CI_Controller {
 		parent::__construct();
 		
 		$this->load->model('user');
+		$this->blade = new Blade(Globals::views(), Globals::cache());
     }
     
 	public function index()
 	{
 		$this->load->view('welcome_message');
+	}
+	
+	public function blade(){
+		echo $this->blade->make('homepage', ['name' => 'John Doe']);
 	}
 	
 	public function create()
