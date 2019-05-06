@@ -1,4 +1,4 @@
-# CodeIgniter Composer + Eloquent ORM
+# CodeIgniter Composer + Eloquent ORM + Blade Template
 
 
 
@@ -39,6 +39,11 @@ codeigniter/
 ```
 /application/controllers/Userc.php
 /application/models/User.php
+```
+
+```
+/applicaion/views/homepage.blade.php
+/applicaion/helpers/Globals_helper.php
 ```
 
 Once loaded properly, you can use eloquent as you use in Laravel. Check Eloquent docs for that.
